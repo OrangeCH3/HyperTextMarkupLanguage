@@ -1,4 +1,4 @@
-#　HyperText Markup Language
+# HyperText Markup Language
 
 ## What is the significance of this project?
 
