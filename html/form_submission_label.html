@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form Submission Label</title>
+</head>
+
+<body>
+
+<h2><stronger>Newcomer registration</stronger></h2>
+
+<!-- 表单form
+ action：表单提交的位置，可以是一个网页，也可以是一个请求处理地址
+ method：提交方式，建议使用post方式
+-->
+<form action="first_demo.html" method="post">
+    <!-- 用户名密码输入框 -->
+    <p>Username: <input type="text" name="username" style="width: 155px" placeholder="Please enter user name" required/></p>
+
+    <p>Passward: <input type="password" name="passward" placeholder="Please enter the password" required/></p>
+
+    <!-- 单选框标签 -->
+    <p>Sex:
+        <input type="radio" value="Man" name="sex" checked/> Man
+        <input type="radio" value="Woman" name="sex"/> Woman
+    </p>
+
+    <!-- 多选框标签 -->
+    <p>Hobby:
+        <input type="checkbox" value="Sleep" name="hobby"/> Sleep
+        <input type="checkbox" value="Code" name="hobby" checked/> Code
+        <input type="checkbox" value="Chat" name="hobby"/> Chat
+    </p>
+    
+    <!-- 按钮标签 -->
+    <p>Button:
+        <input type="button" name="btn1" value="Click Me"/>
+    </p>
+
+    <!-- 下拉框/列表框 -->
+    <p>Ultraman:
+        <select name="Select">
+            <option value="Mebius">Mebius</option>
+            <option value="Cosmos">Cosmos</option>
+            <option value="Cosmos">Cosmos</option>
+        </select>
+    </p>
+
+    <!-- 文本域 -->
+    <p>Feedback:
+        <textarea name="textarea" cols="22" rows="5" style="vertical-align: middle" placeholder="Please fill in your comments"></textarea>
+    </p>
+
+    <!-- 文件域 -->
+<!--    <hr/>-->
+<!--    <p>-->
+<!--        <input type="file" name="files"/>-->
+<!--        <input type="button" value="点击上传" name="upload"/>-->
+<!--    </p>-->
+<!--    <hr/>-->
+
+    <!-- 邮件验证标签 -->
+    <p>Email:
+        <input type="email" name="email" style="width: 190px" placeholder="Please input your email" required/>
+    </p>
+
+    <!-- 网站验证标签 -->
+    <p>Website:
+        <input type="url" name="url" style="width: 170px" placeholder="please input your website" required/>
+    </p>
+
+    <!-- 数字验证标签 -->
+    <p>Number:
+        <input type="number" name="number" max="100" min="10" step="10" style="width: 170px" placeholder="Please enter a number" required/>
+    </p>
+
+    <!-- 滑块标签 -->
+    <p>Slider:
+        <input type="range" name="voice" min="0" max="100" step="5"/>
+    </p>
+
+    <!-- 搜索标签 -->
+    <p>Search:
+        <input type="search" name="search" style="width: 190px" placeholder="Please search something" required/>
+    </p>
+
+    <!-- 默认提交/重置按钮标签 -->
+    <p>
+        <input type="submit" name="submit" value="Click to Submit"/>
+        <input type="reset" name="reset" value="Click to Reset"/>
+    </p>
+    
+</form>
+
+</body>
+</html>
